@@ -106,7 +106,7 @@ public class ConcurentMandelbrot extends JFrame {
             }
         }
 
-        try (FileWriter csvWriter = new FileWriter("mandelbrot_results.csv")) {
+        try (FileWriter csvWriter = new FileWriter("src/main/java/mandelbrot_results.csv")) {
             for (String[] rowData : results) {
                 System.out.println(rowData[0] + " " + rowData[1] + " " + rowData[2]);
                 csvWriter.append(rowData[0]).append(",");
